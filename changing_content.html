@@ -1,0 +1,42 @@
+
+
+<html>
+
+    <head>
+        
+        <title>Changing Content</title>
+ 
+        <script type="text/javascript" src="jquery-3.6.0.slim.min.js"></script>
+        
+        <style type="text/css">
+        
+            #circle {
+                
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: green;
+                margin: 10px;
+                
+            }
+        </style>
+        
+    </head>
+
+    <body>
+        
+       <div id="circle"></div>
+       <p>Click on the green circle to change this text</p>
+        
+       <script type="text/javascript">
+
+            $("#circle").click(function () {
+                $("p").html("You have clicked and the text has changed successfully");
+            });
+        
+        </script>   
+        
+    </body>
+
+</html>
+

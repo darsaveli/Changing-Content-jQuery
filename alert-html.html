@@ -1,0 +1,39 @@
+<html>
+
+    <head>
+        
+        <title>Alert HTML</title>
+ 
+        <script type="text/javascript" src="jquery-3.6.0.slim.min.js"></script>
+        
+        <style type="text/css">
+        
+            #circle {
+                
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: green;
+                margin: 10px;
+                
+            }
+        </style>
+        
+    </head>
+
+    <body>
+        
+       <div id="circle"></div>
+       <p>Click on the green circle to alert the html</p>
+        
+       <script type="text/javascript">
+
+            $("#circle").click(function () {
+                alert($("p").html());
+            });
+        
+        </script>   
+        
+    </body>
+
+</html>
